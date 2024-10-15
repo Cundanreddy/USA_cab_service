@@ -12,6 +12,9 @@ export default {
         'li-secondary-col': '#243c5a',
         'li-tertiary-col': '#f5f5f5',
         'li-quaternary-col': '#ffffff',
+        'da-bg': '#f5f5f5',
+        'li-bg': '#ffffff',
+
         
       },
     },

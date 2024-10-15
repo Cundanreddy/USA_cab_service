@@ -16,22 +16,7 @@ export default function Password() {
 
   return (
     <div>
-      {/* Navigation Bar */}
-      <header>
-        <nav className="navbar flex justify-between items-center bg-gray-100 p-4 shadow-md">
-          {/* Logo */}
-          <img src="logo.png" alt="Restaurant Logo" className="logo w-16" />
-          {/* Navigation Links */}
-          <ul className="nav-links flex space-x-4">
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">Home</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">Menu</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">About</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">Contact</a></li>
-          </ul>
-          {/* Login Button */}
-          <button className="login-btn bg-blue-500 text-white px-4 py-2 rounded">Login</button>
-        </nav>
-      </header>
+      
 
       {/* Login Form */}
       <div className="login-container flex justify-center items-center h-screen bg-gray-50">

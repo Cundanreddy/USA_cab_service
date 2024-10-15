@@ -7,7 +7,7 @@ import Earnings from "./components/driverhomepage/Earnings";
 import Profile from "./components/driverhomepage/Profile";
 import RideRequest from "./components/driverhomepage/RideRequest";
 import { BrowserRouter as Router, HashRouter, Routes, Route } from "react-router-dom"
-import Layout from "./pages/layout";
+import Layout from "./pages/layout/Layout";
 function App() {
   return (
     <div>

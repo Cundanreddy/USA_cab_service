@@ -1,37 +1,10 @@
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 export default function CreateAccount() {
+  const navigate = useNavigate();   
   return (
     <div>
-      <header>
-        <nav className="navbar bg-white p-6 shadow-lg flex justify-between items-center">
-          <img
-            src="/path-to-logo/logo.png"
-            alt="Restaurant Logo"
-            className="logo w-24"
-          />
-          <ul className="nav-links flex space-x-6">
-            <li>
-              <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
-            </li>
-            <li>
-              <Link to="/menu" className="text-gray-700 hover:text-gray-900">Menu</Link>
-            </li>
-            <li>
-              <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
-            </li>
-            <li>
-              <Link to="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
-            </li>
-          </ul>
-          <Link
-            to="/login"
-            className="login-btn bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700"
-          >
-            Login
-          </Link>
-        </nav>
-      </header>
+ 
 
       <div className="signup-container flex justify-center items-center h-screen bg-gray-100">
         <div className="signup-box bg-white p-8 rounded shadow-lg">
@@ -88,13 +61,13 @@ export default function CreateAccount() {
               Next
             </button>
 
-            <div className="login-options mt-4 text-center">
+            <div className="login-options mt-4 text-center flex items-center">
               <p>
-                Already have an account?{' '}
-                <Link to="/login" className="text-indigo-600 hover:underline">
-                  Login here
-                </Link>
+                Already have an account?
               </p>
+              <div  onClick={() => navigate('/restaurantlogin')}className="text-indigo-600 hover:underline">
+                  Login here
+                </div>
             </div>
           </form>
         </div>

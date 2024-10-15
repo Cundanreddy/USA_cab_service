@@ -56,37 +56,32 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a
-                  href="/"
-                  className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                <div
+                  className="rounded-md  px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white active:bg-gray-900"
                   aria-current="page" onClick={() => navigate('/')}
                 >
                   Dashboard
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                </div>
+                <div
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900"
                   onClick={() => navigate('/driverHomePage')}>
                   DriverHomePage
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                </div>
+                <div
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900"
                   onClick={() => navigate('/foodDeliveryHomePage')}>
                   FoodDeliveryHomePage
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                </div>
+                <div
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900"
                   onClick={() => navigate('/resturnantHomePage')}>
                   ResturnantHomePage
-                </a>
-                \ <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                </div>
+                <div
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900"
                   onClick={() => navigate('/riderHomePage')}>
                   RiderHomePage
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -133,74 +128,75 @@ export default function Navbar() {
                 </button>
               </div>
               <div
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                className=" absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu-button"
                 tabindex="-1"
+                // onClick={className=hidden}
               >
-                <a
-                  href="#"
+                <div
+                 
                   className="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
                   id="user-menu-item-0"
                 >
                   Your Profile
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
+                 
                   className="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
                   id="user-menu-item-1"
                 >
                   Settings
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
+                 
                   className="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
                   id="user-menu-item-2"
                 >
                   Sign out
-                </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="sm:hidden" id="mobile-menu">
+      {/* <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          <a
-            href="#"
-            className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+          <div
+           
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text -white active: bg-gray-900"
             aria-current="page"
           >
             Dashboard
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          </div>
+          <div
+           
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text -white"
           >
             Team
-          </a>
-          <a
-            href="#"
+          </div>
+          <div
+           
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             Projects
-          </a>
-          <a
-            href="#"
+          </div>
+          <div
+           
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             Calendar
-          </a>
+          </div>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }

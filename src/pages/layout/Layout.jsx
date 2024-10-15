@@ -6,6 +6,9 @@ import DriverProfile from '../../components/driverprofile/DriverProfile';
 import FoodDeliveryHomepage from '../../components/fooddeliveryhomepage/FoodDeliveryHomepage';
 import CreateAccount from '../../components/restauranthomepage/CreateAccount';
 import Booking from '../../components/ridershomepage/Booking';
+import LoginPage from '../../components/restauranthomepage/LoginPage';
+import Password from '../../components/restauranthomepage/Password';
+import Registration from '../../components/restauranthomepage/Registration';
 export default function Layout() {
   return (
     <>
@@ -18,6 +21,10 @@ export default function Layout() {
         {/* <Route path="/mainLandingPage" element={<LandingPage />} /> */}
         <Route path="/resturnantHomePage" element={<CreateAccount />} />
         <Route path="/riderHomePage" element={<Booking />} />
+        
+        <Route path="/password" element={<Password />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/restaurantlogin" element={<LoginPage />} />
         {/* <Route path="/blogs" element={<Blogs />} /> */}
       </Routes>
       

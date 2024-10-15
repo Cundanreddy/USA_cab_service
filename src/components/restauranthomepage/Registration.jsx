@@ -3,22 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Registration() {
   return (
     <div>
-      {/* Navigation Bar */}
-      <header>
-        <nav className="navbar bg-white p-6 shadow-lg flex justify-between items-center">
-          {/* <img src="/path-to-logo/logo.png" alt="Restaurant Logo" className="logo w-24" /> */}
-          <ul className="nav-links flex space-x-6">
-            <li><Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link></li>
-            <li><Link to="/menu" className="text-gray-700 hover:text-gray-900">Menu</Link></li>
-            <li><Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link></li>
-            <li><Link to="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link></li>
-          </ul>
-          <button className="login-btn bg-blue-500 text-white px-4 py-2 rounded">
-            <Link to="/login">Login</Link>
-          </button>
-        </nav>
-      </header>
-
+      
       {/* Signup Form */}
       <div className="signup-container flex justify-center items-center min-h-screen bg-gray-100">
         <div className="signup-box bg-white p-8 rounded shadow-lg w-96">
