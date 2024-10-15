@@ -1,12 +1,13 @@
-
+import { useNavigate } from 'react-router-dom';
 
 export default function DH_navBar() {
+  
+  const navigate = useNavigate();
   return (
     <nav className="flex justify-around bg-gray-800 p-4">
       {/* Home Icon */}
-      <a
-        routerLink="/"
-        routerLinkActive="active"
+      <div
+        onClick={() => navigate('/driverhomepage')}
         className="text-white hover:text-yellow-500"
       >
         <svg
@@ -24,12 +25,11 @@ export default function DH_navBar() {
           <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
           <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
         </svg>
-      </a>
+      </div>
 
       {/* Earnings Icon */}
-      <a
-        routerLink="dh/earnings"
-        routerLinkActive="active"
+      <div
+        onClick={() => navigate('/Earnings')}
         className="text-white hover:text-yellow-500"
       >
         <svg
@@ -48,10 +48,12 @@ export default function DH_navBar() {
           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
           <path d="M12 17.5v-11" />
         </svg>
-      </a>
+      </div>
 
       {/* Settings Icon */}
-      <a href="#" className="text-white hover:text-yellow-500">
+      <div 
+        onClick={() => navigate('/')}
+        className="text-white hover:text-yellow-500">
         <i className="icon settings-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +75,7 @@ export default function DH_navBar() {
             <path d="M5 14v7H2" />
           </svg>
         </i>
-      </a>
+      </div>
     </nav>
   );
 }

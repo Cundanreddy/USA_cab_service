@@ -25,6 +25,7 @@ export default function Layout() {
         <Route path="/password" element={<Password />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/restaurantlogin" element={<LoginPage />} />
+        
         {/* <Route path="/blogs" element={<Blogs />} /> */}
       </Routes>
       
